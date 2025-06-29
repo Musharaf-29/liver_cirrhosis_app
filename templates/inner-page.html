@@ -1,0 +1,44 @@
+{% extends "base.html" %} {% block content %}
+<section class="py-5 bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <h1 class="text-center mb-4">About Liver Cirrhosis Prediction</h1>
+                <div class="card shadow">
+                    <div class="card-body">
+                        <h3>Project Overview</h3>
+                        <p>This web application uses machine learning to predict the likelihood of liver cirrhosis based on clinical test results. The model was trained on a comprehensive dataset of liver function tests and patient outcomes.</p>
+
+
+                        <h3>About the Application</h3>
+                        <p>This tool uses a Random Forest model trained on the Indian Liver Patient Dataset to predict liver cirrhosis stages. Input clinical parameters to get instant, data-driven insights.</p>
+
+                        <h3 class="mt-4">How It Works</h3>
+                        <p>The prediction system uses a Random Forest classifier that was trained on the following features:</p>
+                        <ul>
+                            <li>Patient age</li>
+                            <li>Total Bilirubin levels</li>
+                            <li>Direct Bilirubin levels</li>
+                            <li>Alkaline Phosphotase levels</li>
+                            <li>Alamine Aminotransferase levels</li>
+                            <li>Aspartate Aminotransferase levels</li>
+                            <li>Total Proteins</li>
+                            <li>Albumin levels</li>
+                            <li>Albumin and Globulin Ratio</li>
+                        </ul>
+
+                        <h3 class="mt-4">Model Performance</h3>
+                        <p>The Random Forest model achieves an accuracy of approximately 68% on the test dataset. While not perfect, it provides valuable insights that can assist healthcare professionals in early detection.</p>
+
+                        <h3 class="mt-4">Disclaimer</h3>
+                        <div class="alert alert-warning">
+                            <p>This tool is for informational purposes only and is not a substitute for professional medical advice, diagnosis, or treatment. Always seek the advice of your physician or other qualified health provider with any questions you
+                                may have regarding a medical condition.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

@@ -1,0 +1,41 @@
+{% extends "base.html" %} {% block content %}
+<section class="py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <h1 class="text-center mb-4">Technical Details</h1>
+                <div class="card shadow">
+                    <div class="card-body">
+                        <h3>Dataset Information</h3>
+                        <p>The model was trained on the Indian Liver Patient Dataset (ILPD) which contains 583 patient records with 10 clinical features.</p>
+
+                        <h3 class="mt-4">Feature Importance</h3>
+                        <p>The most important features in the model's decision-making process are:</p>
+                        <ol>
+                            <li>Albumin and Globulin Ratio</li>
+                            <li>Total Proteins</li>
+                            <li>Albumin</li>
+                            <li>Age</li>
+                            <li>Alkaline Phosphotase</li>
+                        </ol>
+
+                        <h3 class="mt-4">Model Architecture</h3>
+                        <p>The Random Forest classifier consists of 100 decision trees, with a maximum depth of 10 for each tree. The model uses Gini impurity as the splitting criterion.</p>
+
+                        <h3 class="mt-4">Preprocessing</h3>
+                        <p>All input features are normalized using a StandardScaler before being fed to the model to ensure consistent scale across features.</p>
+
+                        <h3 class="mt-4">Future Improvements</h3>
+                        <ul>
+                            <li>Integration with electronic health records for automated data input</li>
+                            <li>More comprehensive clinical features</li>
+                            <li>Improved model accuracy through ensemble techniques</li>
+                            <li>Real-time data visualization</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
