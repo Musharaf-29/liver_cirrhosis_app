@@ -69,5 +69,11 @@ Top contributing features:
 
 ---
 
+## 🚀 How to Run
+
+### 1. Clone the repository
+```bash
+git clone https://github.com/Musharaf-29/liver_cirrhosis_app.git
+cd liver-cirrhosis-prediction
 
 
